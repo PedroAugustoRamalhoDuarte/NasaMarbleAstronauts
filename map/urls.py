@@ -6,5 +6,5 @@ app_name = 'map'
 
 urlpatterns = [
     path('', views.index),
-    path('sensor', views.get_data, name='get_data_arduino')
+    path('sensor/', views.get_data, name='get_data_arduino')
 ]
