@@ -14,6 +14,7 @@ def get_data(request):
     template_name = 'arduino.html'
     context = {}
     if request.method == 'POST':
+        print(request.POST)
         data = request.POST.get('a0')
         print(data)
         context['a0'] = data
