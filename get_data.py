@@ -33,8 +33,23 @@ with open('data/LosAngeles.csv') as csv_file:
             line_count += 1
     print(f'Processed {line_count} lines.')
 
-LAList_co = [float(item['value']) for item in dict if item['parameter'] == 'co' and item['location'] == 'Anaheim']
-LAList_time = [item['date'] for item in dict if item['parameter'] == 'co' and item['location'] == 'Anaheim']
+LAList_co = [float(item['value']) for item in dict if item['parameter'] == 'co' and item['location'] == 'Pomona']
+tam = sum(LAList_co)/len(LAList_co)
+print(tam)
+
+LAList_co = [float(item['value']) for item in dict if item['parameter'] == 'co' and item['location'] == 'Reseda']
+tam = sum(LAList_co)/len(LAList_co)
+print(tam)
+
+LAList_co = [float(item['value']) for item in dict if item['parameter'] == 'co' and item['location'] == 'Santa Clarita']
+tam = sum(LAList_co)/len(LAList_co)
+print(tam)
+
+LAList_co = [float(item['value']) for item in dict if item['parameter'] == 'co' and item['location'] == 'West Los Angeles - V']
+tam = sum(LAList_co)/len(LAList_co)
+print(tam)
+
+LAList_time = [item['date'] for item in dict if item['parameter'] == 'co']
 #LAList_no2 = [float(item['value']) for item in dict if item['parameter'] == 'no2']
 '''
 LAList_o3 = [float(item['value']) for item in dict if item['parameter'] == 'o3']
