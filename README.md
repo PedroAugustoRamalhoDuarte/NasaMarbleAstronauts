@@ -9,3 +9,7 @@ We used our knowledge in software designing, hardware development and user exper
 
 ## Challenges Faced
 We had to overcome programming bugs, hardware problems and pitch construction. In the end we are proud of what we have developed, since we are contributing to reduce air pollution.
+
+## Technology Used
+
+The site was made with django, the sensor was made with arduino, there are scripts that get data from nasa database and plot the data beatifully, also we use nasa world wind to plot the globe
