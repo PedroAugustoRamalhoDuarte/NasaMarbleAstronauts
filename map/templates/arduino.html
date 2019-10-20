@@ -1,2 +1,13 @@
 {% csrf_token %}
-<h1>{{ a0 }}</h1>
+<h1>{{ a0 }} - {{ a1 }} - {{ a2 }}</h1>
+
+<h2> Gutão Aqui é o site dos posts </h2>
+
+{% if data %}
+    <h3> Dados enviados com sucesso, bora Gutão:</h3>
+    {% for d in data %}
+        <p> {{ d.name }} - {{ d.data }} - {{ d.created_at }}</p>
+    {% endfor %}
+{% else %}
+    <h3> Gutão ainda tu n enviou os dados irmão, manda ae</h3>
+{% endif %}
