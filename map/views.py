@@ -9,7 +9,7 @@ def index(request):
     template_name = 'index.html'
     return render(request, template_name)
 
-
+@csrf_exempt
 def get_data(request):
     template_name = 'arduino.html'
     context = {}
